@@ -25,13 +25,13 @@ repos:
         exclude: ^(install|get)-poetry.py$
 
   - repo: https://github.com/hadialqattan/pycln
-    rev: v2.4.0
+    rev: v2.5.0
     hooks:
       - id: pycln
         args: [--all]
 
   - repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+    rev: 6.0.1
     hooks:
       - id: isort
         name: "isort (python)"
@@ -48,16 +48,16 @@ repos:
         args: [--lines-after-imports, "-1"]
 
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
 
   - repo: https://github.com/pycqa/flake8
-    rev: 7.1.1
+    rev: 7.1.2
     hooks:
       - id: flake8
 
   - repo: https://github.com/pre-commit/pre-commit
-    rev: v4.0.1
+    rev: v4.1.0
     hooks:
       - id: validate_manifest
